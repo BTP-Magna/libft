@@ -1,36 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thamahag <BTP_Magna@proton.me>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/16 19:02:48 by thamahag          #+#    #+#             */
-/*   Updated: 2025/06/16 19:02:48 by thamahag         ###   ########.fr       */
+/*   Created: 2025/06/16 23:39:03 by thamahag          #+#    #+#             */
+/*   Updated: 2025/06/16 23:39:03 by thamahag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Not test but whatever will check back when created tester
 /**
- * @brief Locate byte in byte string
- * Locate the first occurrence of c (convert to an unsigned char) in string
- * @param s
- * @param c
+ * @brief append src string to dest string up to n byte
+ * if src contain n or more byte will write up to n plus null terminater
+ *
+ *
+ * @param dest
+ * @param src
  * @param n
- * @return void* pointer to the byte located, or NULL if no such byte exist
+ * @return char*
  */
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_strncat(char *dest, const char *src, size_t n)
 {
-	unsigned char *s_ptr;
-	unsigned char		character;
+	char	*ptr;
 
-	s_ptr = (unsigned char *)s;
-	character = (unsigned char)c;
-	while (n-- > 0)
+	ptr = dest;
+	while (*ptr)
+		ptr++;
+	while (*src && n > 0)
 	{
-		if (*s_ptr++ == character)
-			return (--s_ptr);
+		*ptr++ = *src++;
+		n--;
 	}
-	return (NULL);
+	while (n-- > 0)
+		*ptr = '\0';
+	return (dest);
 }
