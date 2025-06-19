@@ -46,5 +46,3 @@ void	*ft_memset(void *s, int c, size_t n)
 // 		*(ptr + i++) = c;
 // 	return (s);
 // }
-
-// https://man.freebsd.org/cgi/man.cgi?query=memset&apropos=0&sektion=0&manpath=FreeBSD+14.3-RELEASE+and+Ports&arch=default&format=html

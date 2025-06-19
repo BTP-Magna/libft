@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thamahag <BTP_Magna@proton.me>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/17 20:31:33 by thamahag          #+#    #+#             */
-/*   Updated: 2025/06/19 01:24:52 by thamahag         ###   ########.fr       */
+/*   Created: 2025/06/17 20:37:22 by thamahag          #+#    #+#             */
+/*   Updated: 2025/06/18 00:29:25 by thamahag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Wonder if I need to check for unicode later on as well?
+// This function won't handle unidcode
 /**
- * @brief Check whether character is alphabet or digits number
+ * @brief Check whether character is digit
  *
  * @param c
  * @return int
  */
-int	ft_isalpha(int c)
+int	ft_isdigit(int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
+	return (c >= '0' && c <= '9');
 }

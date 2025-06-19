@@ -23,9 +23,6 @@
  * @param n
  * @return void*
  */
-
- // There maybe overlap so need to check the input address whether it came from
- // front and back and need to reverse copy or copy forward to avoid buffer
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d_ptr;
@@ -47,6 +44,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+// There maybe overlap so need to check the input address whether it came from
+// front and back and need to reverse copy or copy forward to avoid buffer
 // 0 1 2 3 4 5
 // a b c d e f
 // ^   ^

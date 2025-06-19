@@ -6,7 +6,7 @@
 /*   By: thamahag <BTP_Magna@proton.me>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/17 20:29:24 by thamahag          #+#    #+#             */
-/*   Updated: 2025/06/17 20:29:45 by thamahag         ###   ########.fr       */
+/*   Updated: 2025/06/17 20:52:12 by thamahag         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 int	ft_atoi(const char *nptr)
 {
 	int		result;
-	int 	sign;
+	int		sign;
 
 	result = 0;
 	sign = 1;
