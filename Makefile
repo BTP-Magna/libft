@@ -25,7 +25,9 @@ SRCS := ft_memset ft_bzero ft_memcpy ft_memmove ft_memchr ft_memcmp ft_strlen\
 	ft_strdup ft_strncpy ft_strncpy ft_strcat ft_strncat ft_strlcat ft_strlcpy\
 	ft_strchr ft_strrchr ft_strstr ft_strnstr ft_strcmp ft_strncmp ft_atoi \
 	ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_toupper \
-	ft_tolower ft_calloc ft_substr ft_strjoin ft_strtrim ft_split
+	ft_tolower ft_calloc ft_substr ft_strjoin ft_strtrim ft_split ft_itoa \
+	ft_strmapi ft_striteri ft_putchar_fd ft_putstr_fd ft_putendl_fd \
+	ft_putnbr_fd
 # Add Prefix directory to compile .c $(addprefix src/,foo bar)
 #	the result src/foo src/bar.
 # String substitution $(patsubst pattern,replaceme`nt, text)
